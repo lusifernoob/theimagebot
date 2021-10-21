@@ -39,11 +39,11 @@
 
 ```
 
-## Deployment
+## Host Bot
+### Deploy to Heroku
+Click Below Button to Deploy to Heroku:
 
-Deploy on Heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lusifernoob/theimagebot)
 
 
 # Licence
