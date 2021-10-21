@@ -10,6 +10,7 @@
   "repository": "https://github.com/lusifernoob/theimagebot/",
   "success_url": "https://t.me/OMG_info",
   "env": {
+    "ENV": {
       "description": "Setting this to ANYTHING will enable env variables",
       "value": "ANYTHING"
     },
@@ -25,7 +26,7 @@
       "LD_LIBRARY_PATH": {
       "description": "LD_LIBRARY_PATH is a colon-separated set of directories where libraries should be searched for first",
       "value": "/app/.heroku/vendor/lib:/app/.heroku/python/lib:/app/.apt/usr/lib/x86_64-linux-gnu:/app/.apt/usr/lib/i386-linux-gnu:/app/.apt/usr/lib:"
-    }
+    },
       "GOOGLE_CHROME_BIN": {
       "description": "Chrome bin ENV Path",
       "value": "/app/.apt/usr/bin/google-chrome"
@@ -47,5 +48,5 @@
     {
       "url": "https://github.com/heroku/heroku-buildpack-apt"
     },
-  { "url": "heroku/python" 
+  { "url": "heroku/python" } ]
  }
