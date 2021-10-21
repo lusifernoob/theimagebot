@@ -86,7 +86,7 @@ Please Don't Spam 🥺
 
         draw = ImageDraw.Draw(photo)
         text = watermark_text
-        font = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf', int(size_))
+        font = ImageFont.truetype('/usr/share/fonts/truetype/ttf-dejavu/DejaVuSerif-Bold.ttf', int(size_))
         textwidth, textheight = draw.textsize(text, font)
 
         # calculate the x,y coordinates of the text
