@@ -13,6 +13,7 @@
       "description": "Your bot token get from bot father",
       "value": ""
     },
+    "env": {
       "CHROMEDRIVER_PATH": {
       "description": "Chrome driver ENV Path",
       "value": "/app/.chromedriver/bin/chromedriver"
