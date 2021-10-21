@@ -39,6 +39,13 @@
 
 ```
 
+## Deployment
+
+Deploy on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 # Licence
 
 * Copyright (C) 2020-2021 by <a href="https://github.com/NoOneLuvMe">NoOneLuvMe@Github</a>.
