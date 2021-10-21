@@ -46,7 +46,7 @@ Please Don't Spam 🥺
     image_to_text = pytesseract.image_to_string(blueBand, lang='eng')
     image_to_text += '''
 
-Text from Image By @theimagebot ❤
+Text from Image By @shado_hackers ❤
     '''
     context.bot.send_message(chat_id=update.effective_chat.id, text=image_to_text)
 
@@ -70,7 +70,7 @@ def addwatermark(update, context):
     if size_ < 100:
 
         context.bot.get_file(update.message.reply_to_message.photo[-1]).download(
-            custom_path="./Watermark/@theimagebot.png")
+            custom_path="./Watermark/@OMG_info.png")
         messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
 
@@ -80,7 +80,7 @@ Please Don't Spam 🥺
                 </b>'''
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
-        photo = Image.open("./Watermark/@theimagebot.png")
+        photo = Image.open("./Watermark/@OMG_info.png")
         # make the image editable
         width, height = photo.size
 
@@ -96,11 +96,11 @@ Please Don't Spam 🥺
 
         # draw watermark in the bottom right corner
         draw.text((x, y), text, font=font)
-        photo.save('./Watermark/@theimagebot.png')
+        photo.save('./Watermark/@OMG_info.png')
 
-        caption = "<b>Watermark Added By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b>❤️"
+        caption = "<b>Watermark Added By <a herf=\"http://t.me/OMG_info\">@OMG_info</a></b>❤️"
         context.bot.send_document(chat_id=update.effective_chat.id,
-                                  document=open('./Watermark/@theimagebot.png', 'rb'),
+                                  document=open('./Watermark/@OMG_info.png', 'rb'),
                                   caption=caption, parse_mode="html")
 
     else:
@@ -120,7 +120,7 @@ def blur(update, context):
     username = update.message.chat.username
     print("Blured By : ", username)
     context.bot.get_file(update.message.reply_to_message.photo[-1]).download(
-        custom_path="./Editing/@theimagebot.png")
+        custom_path="./Editing/@OMG_info.png")
     blur_radious = int(context.args[0])
 
     if blur_radious < 100:
@@ -135,13 +135,13 @@ Please Don't Spam 🥺
 
         update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
-        Photo = Image.open("./Editing/@theimagebot.png")
+        Photo = Image.open("./Editing/@OMG_info.png")
         photo = Photo.filter(ImageFilter.GaussianBlur(radius=blur_radious))
-        photo.save('./Editing/@theimagebot.png')
+        photo.save('./Editing/@OMG_info.png')
 
-        caption = "<b>Blured  By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b> ❤️"
+        caption = "<b>Blured  By <a herf=\"http://t.me/OMG_info\">@OMG_info</a></b> ❤️"
         context.bot.send_document(chat_id=update.effective_chat.id,
-                                  document=open('./Editing/@theimagebot.png', 'rb'),
+                                  document=open('./Editing/@OMG_info.png', 'rb'),
                                   caption=caption, parse_mode="html")
 
     else:
@@ -160,7 +160,7 @@ def reverse(update, context):
     username = update.message.chat.username
     print("Reverse By : ", username)
     context.bot.get_file(update.message.reply_to_message.photo[-1]).download(
-        custom_path="./Reverse/@theimagebot.png")
+        custom_path="./Reverse/@OMG_info.png")
     messa = '''<b>
 Please Wait For Few Seconds 🧘‍♂️
 
@@ -171,7 +171,7 @@ Please Don't Spam 🥺
 
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=messa, parse_mode='html')
 
-    filePath = "./Reverse/@theimagebot.png"
+    filePath = "./Reverse/@OMG_info.png"
     searchUrl = 'http://www.google.hr/searchbyimage/upload'
     multipart = {'encoded_image': (filePath, open(filePath, 'rb')), 'image_content': ''}
     response = requests.post(searchUrl, files=multipart, allow_redirects=False)
@@ -182,7 +182,7 @@ Please Don't Spam 🥺
 {fetchUrl}
 
 <b>Reversed By️
-   <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b> ❤
+   <a herf=\"http://t.me/OMG_info\">@OMG_info</a></b> ❤
 '''
     context.bot.send_message(chat_id=update.effective_chat.id, text=link, parse_mode='html')
 
@@ -197,10 +197,9 @@ def start(update, context):
     welcome = f'''
 <b>Hey @{username} 👋
 
-I'm <a herf=\"http://t.me/theimagebot\">@theimagebot</a> 
+I'm <a herf=\"http://t.me/OMG_info\">@OMG_info</a> 
 
-I'm a Open Source Bot 
-/source_code to Get Repo Link 😌
+
 
 I Can Do Many Things
 
@@ -212,11 +211,11 @@ I Can Do Many Things
 
 Hit /help If You Don't Know How to Use Me 
 
-Developer : <a href=\"t.me/no_one_luv_me\"> ෴ 乂(≧▽≦) 乂 ෴ </a>🧑‍💻
+Developer : <a href=\"t.me/shado_hackers\"> 𝐋𝐔𝐒𝐈𝐅𝐄𝐑</a>🧑‍💻
 
-Support Group : <a href=\"https://t.me/ostrichdiscussion\">Ostrich Discussion</a> 🦸‍♂️
+Support Group : <a href=\"https://t.me/OMG_info\">@𝐎𝐌𝐆_𝐢𝐧𝐟𝐨</a> 🦸‍♂️
 
-Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️
+Made By <a href=\"https://t.me/shado_hackers\"> 𝐋𝐔𝐒𝐈𝐅𝐄𝐑 </a> ❤️
 
 </b>
 '''
@@ -248,7 +247,7 @@ To Add watermark to an image 🏋️‍♂
 ️
 replay to an image with /addwatermark {text to be watermark}:{watermark size}
 
-example: /addwatermark @ostrichdiscussion:30
+example: /addwatermark @𝐎𝐌𝐆_𝐢𝐧𝐟𝐨:30
 
 To Blur A Image 🚵‍♀️
 
@@ -256,8 +255,7 @@ replay to an image with /blur {blur value}
 
 example: /blur 40
 
-I'm a Open Source Bot 
-/source_code to Get Repo Link 😌
+
 *
     '''
     update.message.reply_text(reply_to_message_id=update.message.message_id, text=help_, parse_mode='markdown')
@@ -305,7 +303,7 @@ Please Don't Spam 🥺
     button = driver.find_element_by_xpath("//button[@class='jsx-1730877631 ']")
     button.click()
     time.sleep(5)
-    caption = "<b>Carbonized By <a herf=\"http://t.me/theimagebot\">@theimagebot</a></b>❤️"
+    caption = "<b>Carbonized By <a herf=\"http://t.me/OMG_info\">@OMG_info</a></b>❤️"
     context.bot.send_document(chat_id=update.effective_chat.id,
                               document=open('./Carbon/carbon.png', 'rb'),
                               caption=caption, parse_mode="html")
@@ -324,15 +322,13 @@ def source_code(update, context):
     print("Source  : ", username)
     source = '''
 
-Developer : <a href=\"t.me/no_one_luv_me\"> ෴ 乂(≧▽≦) 乂 ෴ </a>🧑‍💻
+Developer : <a href=\"t.me/shado_hackers\"> 𝐋𝐔𝐒𝐈𝐅𝐄𝐑 </a>🧑‍💻
     
-Repository Link : https://github.com/NoOneLuvMe/theimagebot
-    
-<b>Give a 🌟 if you liked the repo ❤️</b>
 
-Support Group : <a href=\"https://t.me/ostrichdiscussion\">Ostrich Discussion</a> 🦸‍♂️
 
-Made By <a href=\"https://t.me/theostrich\"> Ostrich </a> ❤️  
+Support Group : <a href=\"https://t.me/OMG_info\">@𝐎𝐌𝐆_𝐢𝐧𝐟𝐨</a> 🦸‍♂️
+
+Made By <a href=\"https://t.me/shado_hackers\"> 𝐋𝐔𝐒𝐈𝐅𝐄𝐑 </a> ❤️  
 
 
  
@@ -346,6 +342,6 @@ dispatcher.add_handler(source_code_handeler)
 
 updater.start_polling()
 
-# Dev -> t.me/no_one_luv_me
-# channel -> https://t.me/theostrich
-# support -> https://t.me/ostrichdiscussion
+# Dev -> t.me/shado_hackers
+# channel -> https://t.me/OMG_info
+# support -> https://t.me/OMG_info
